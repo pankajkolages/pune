@@ -92,41 +92,5 @@ for size in process_sizes:
    allocator.worst_fit(size)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#  class MemoryBlock:
-#    def __init__(self,size):
-#       self.size = size
-#       self.is_allocated = False
-
-#    def __repr__(self):
-#       return f"size: {self.size},allocated: {self.is_allocated}"
-   
-# class MemoryAllocator:
-#    def __init__(self,memory_blocks):
-#       self.memory_blocks= [MemoryBlock(size) for size in memory_blocks]
-#       self.last_allocated_index =0
-
-#    def first_fit(self,process_size):
-#       for block in self.memory_blocks:
-#          if not block.is_allocated and block.size >= process_size:
-#             block.is_allocated = True
-#             print(f"process of size {process_size} is allocated to block of size {block.size}")
-#             return True
-#          print(f"process of size{process_size} could not be allocated.  ")
-#          return False       
+  
         
